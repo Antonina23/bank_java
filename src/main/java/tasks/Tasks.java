@@ -1,48 +1,48 @@
 package tasks;
 
 public class Tasks {
-    public String number(int x) {
-        String numberCheck = "";
-        if(x > 0) {
-            numberCheck = "Число положительное";
-        }
-        if (x < 0) {
-            numberCheck = "Число отрицательное";
-        }
-        if (x == 0) {
-            numberCheck = "Число равно 0";
-        }
-        return numberCheck;
+    public void number(int x) {
+            if(x > 0) {
+                System.out.println("Число положительное");
+            }
+            else if(x <0) {
+                System.out.println("Число положительное");
+            }
+            else {
+                System.out.println("Число ноль");
+            }
     }
 
-    public int twice(int y, int z) {
-        if(y > z) {
-            return y;
+    public void twoNumber(int z, int y) {
+        if(z > y) {
+            System.out.println(z);
         }
         else {
-            return z;
+            System.out.println(y);
         }
     }
 
-    public String star(int w) {
-        String starCheck = "";
-        if(w == 5) {
-            starCheck = "Отлично";
+    public void ball(int q) {
+        if(q == 5) {
+            System.out.println("Отлично");
         }
-        else if (w == 4) {
-            starCheck = "Хорошо";
+        else if(q == 4) {
+            System.out.println("Хорошо");
         }
-        else if (w == 3) {
-            starCheck = "Удовлетворительно";
+        else if(q == 3) {
+            System.out.println("Удовлетворительно");
         }
-        else if (w == 2 || w == 1) {
-            starCheck = "Неудовлетворительно";
+        else if(q == 2 || q == 1){
+            System.out.println("Неудовлетворительно");
+        }
+    }
+
+    public void whatNumber(int w) {
+        if(w % 2 == 0) {
+            System.out.println("Число четное");
         }
         else {
-            starCheck = "Такой оценки не существует";
+            System.out.println("Число нечетное");
         }
-        return starCheck;
     }
-
-
 }

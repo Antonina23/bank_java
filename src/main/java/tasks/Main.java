@@ -3,28 +3,30 @@ package tasks;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
-        int inputNumber = scanner.nextInt();
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Введите число");
+      int x = scanner.nextInt();
 
-        Tasks tasks = new Tasks();
-        String result = tasks.number(inputNumber);
-        System.out.println(result);
+      Tasks tasks = new Tasks();
+      tasks.number(x);
 
-        System.out.println("Введите первое число: ");
-        int inputTwoNumber = scanner.nextInt();
-        System.out.println("Введите второе число: ");
-        int inputThreeNumber = scanner.nextInt();
+      System.out.println("Введите первое число");
+      int z = scanner.nextInt();
 
-        int maxNumber = tasks.twice(inputTwoNumber, inputThreeNumber);
-        System.out.println(maxNumber);
+      System.out.println("Введите второе число");
+      int y = scanner.nextInt();
 
-        System.out.println("Введите оценку: ");
-        int inputStar = scanner.nextInt();
+      tasks.twoNumber(z, y);
 
-        String result2 = tasks.star(inputStar);
-        System.out.println(result2);
+      System.out.println("Введите оценку");
+      int q = scanner.nextInt();
 
-    }
+      tasks.ball(q);
+
+      System.out.println("Введите любое число");
+      int w = scanner.nextInt();
+
+      tasks.whatNumber(w);
+   }
 }
