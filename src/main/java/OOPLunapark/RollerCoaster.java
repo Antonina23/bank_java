@@ -1,13 +1,13 @@
 package OOPLunapark;
 
 public class RollerCoaster extends Attractions {
-    public RollerCoaster() {
-        this.name = "RollerCoaster";
-        this.age = 2;
+    public RollerCoaster(String name, int age) {
+        setName(name);
+        setAge(age);
     }
 
     @Override
     void service() {
-        System.out.println("Американские горки требуют регулярной проверки безопасности");
+        System.out.println(getName() + " требуют регулярной проверки безопасности");
     }
 }

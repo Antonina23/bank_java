@@ -12,6 +12,14 @@ public abstract class FarmAnimals {
         return this.name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     abstract void care();
     abstract void getProduct();
 }

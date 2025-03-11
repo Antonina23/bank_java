@@ -12,5 +12,11 @@ public abstract class Dish {
         return this.infoCelsium;
     }
 
+    public void setInfoVolume(int infoVolume) {
+        this.infoVolume = infoVolume;
+    }
 
+    public void setInfoCelsium(int infoCelsium) {
+        this.infoCelsium = infoCelsium;
+    }
 }

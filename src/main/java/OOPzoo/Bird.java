@@ -1,19 +1,19 @@
 package OOPzoo;
 
 public class Bird extends Animal {
-    public Bird() {
-        this.name = "Bird";
-        this.age = 2;
+    public Bird(String name, int age) {
+        setName(name);
+        setAge(age);
     }
 
     @Override
     void speak() {
-        System.out.println("Птица чирикает");
+        System.out.println(getName() + " чирикает");
     }
 
     @Override
     void move() {
-        System.out.println("Птица летает");
+        System.out.println(getName() + " летает");
     }
 
 }

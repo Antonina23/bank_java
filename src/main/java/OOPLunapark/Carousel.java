@@ -1,13 +1,13 @@
 package OOPLunapark;
 
 public class Carousel extends Attractions {
-    public Carousel() {
-        this.name = "Carousel";
-        this.age = 1;
+    public Carousel(String name, int age) {
+        setName(name);
+        setAge(age);
     }
 
     @Override
     void service() {
-        System.out.println("Карусель нуждается в частом техническом обслуживании");
+        System.out.println(getName() + " нуждается в частом техническом обслуживании");
     }
 }

@@ -1,13 +1,13 @@
 package OOPMuseum;
 
 public class Sculpture extends Exponat {
-    public Sculpture() {
-        this.name = "Скульптура";
-        this.year = 1200;
+    public Sculpture(String name, int year) {
+        setName("Скульптура: " + name);
+        setYear(year);
     }
 
     @Override
     void care() {
-        System.out.println("Скульптура нуждается в регулярной реставрации");
+        System.out.println(getName() + " нуждается в регулярной реставрации");
     }
 }

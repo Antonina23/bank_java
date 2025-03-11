@@ -1,6 +1,15 @@
 package OOPzoo;
 
 public class Zoopark {
+        private Animal animal;
+
+        public Zoopark() {
+            this.animal = null;
+        }
+
+        public void addAnimal(Animal animal) {
+            this.animal = animal;
+        }
 
         public void showthem(Animal animal) {
             animal.move();

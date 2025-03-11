@@ -1,19 +1,19 @@
 package OOPFarm;
 
 public class Cow extends FarmAnimals {
-   public Cow() {
-       this.name = "Cow";
-       this.age = 2;
+   public Cow(String name, int age) {
+       setName(name);
+       setAge(age);
    }
 
    @Override
     public void care() {
-       System.out.println("Корова пасется на лугу");
+       System.out.println(getName() + " пасется на лугу");
    }
 
    @Override
     public void getProduct() {
-       System.out.println("Корова дает молоко");
+       System.out.println(getName() + " дает молоко");
    }
 
 

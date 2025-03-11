@@ -1,13 +1,13 @@
 package OOPMuseum;
 
 public class Manuscripts extends Exponat {
-    public Manuscripts() {
-        this.name = "Манускрипты";
-        this.year = 950;
+    public Manuscripts(String name, int year) {
+        setName("Манускрипт: " + name);
+        setYear(year);
     }
 
     @Override
     void care() {
-        System.out.println("Древние манускрипты требуют контролируемой влажности и температуры");
+        System.out.println(getName() + "требуют контролируемой влажности и температуры");
     }
 }
