@@ -2,11 +2,11 @@ package OOPAquarium;
 
 public class SeaStar extends SeaAnimals{
     public SeaStar(String name) {
-        setName(name);
+        this.name = name;
     }
 
     @Override
-    public void move(){
-        System.out.println(getName() + " медленно ползает по дну");
+    void move() {
+        System.out.println("Морское животное: " + getName() + " медленно ползает по дну");
     }
 }

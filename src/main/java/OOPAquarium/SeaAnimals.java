@@ -1,7 +1,7 @@
 package OOPAquarium;
 
 public abstract class SeaAnimals {
-    private String name;
+   public String name;
 
     public String getName() {
         return name;
