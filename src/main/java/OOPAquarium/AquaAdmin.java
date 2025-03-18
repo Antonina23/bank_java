@@ -7,12 +7,11 @@ public class AquaAdmin {
         this.seaAnimals = null;
     }
 
-    public void addAnimal(SeaAnimals seaAnimals) {
+    public void add(SeaAnimals seaAnimals) {
         this.seaAnimals = seaAnimals;
     }
 
     public void showThem(SeaAnimals seaAnimals) {
         seaAnimals.move();
     }
-
 }
